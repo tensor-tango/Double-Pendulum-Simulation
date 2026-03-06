@@ -97,6 +97,7 @@ def rk4_step(y, dt):
 plt.style.use("default")
 
 fig = plt.figure(figsize=(14,8))
+plt.subplots_adjust(hspace=0.35, wspace=0.25)
 
 ax_sim = plt.subplot(221)
 ax_energy = plt.subplot(222)
@@ -108,6 +109,8 @@ ax_info = plt.subplot(233)
 # -------------------------
 
 ax_sim.set_title("Double Pendulum")
+ax_sim.set_xlabel("x [m]")
+ax_sim.set_ylabel("y [m]")
 
 ax_sim.set_xlim(-3,3)
 ax_sim.set_ylim(-3,3)
@@ -136,6 +139,8 @@ lineE, = ax_energy.plot([],[], color="cyan", label="Total")
 
 ax_energy.legend()
 ax_energy.set_title("Energy")
+ax_energy.set_xlabel("time [s]")
+ax_energy.set_ylabel("energy [J]")
 
 # -------------------------
 # Phase portrait GUI elements
@@ -147,6 +152,8 @@ phase_points_y = []
 phase_line, = ax_phase.plot([],[], color="orange")
 
 ax_phase.set_title("Phase portrait θ1 vs ω1")
+ax_phase.set_xlabel("θ₁ [rad]")
+ax_phase.set_ylabel("ω₁ [rad/s]")
 
 # -------------------------
 # Parameters and initial conditions GUI elements
