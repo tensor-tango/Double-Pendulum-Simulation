@@ -6,7 +6,7 @@ Real-time simulation of a chaotic double pendulum system.
 
 Main features:
 - RK4 numerical integrator
-- Real-time visualization
+- Live simulation
 - Energy analysis
 - Phase portrait 
 - Chaotic trajectory tracking
