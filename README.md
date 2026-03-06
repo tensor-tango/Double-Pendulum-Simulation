@@ -2,9 +2,7 @@ Double Pendulum Simulation
 
 Real-time simulation of a chaotic double pendulum system.
 
-<p align="center">
-  <img src="фтшьфешщт.gif" width="700">
-</p>
+![Simulation](animation.gif)
 
 Main features:
 - RK4 numerical integrator
