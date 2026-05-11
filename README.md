@@ -24,7 +24,7 @@ Main features:
 ## Models descriptions and notices
 
 ### Computational notices
-The masses of the rods L_1 and L_2 are omitted and assumed to be massless, masses m_1 and m_2 are treated as the point masses, the whole system is in 2D due to pendulum simplification
+The masses of the rods $L_1$ and $L_2$ are omitted and assumed to be massless, masses $m_1$ and $m_2$ are treated as the point masses, the whole system is in 2D due to pendulum simplification
 
 ### Physical model
 
