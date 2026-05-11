@@ -24,11 +24,11 @@ Main features:
 ## Models descriptions and notices
 
 ### Computational notices
-The masses of the rods $L_1$ and $L_2$ are omitted and assumed to be massless, masses $m_1$ and $m_2$ are treated as the point masses, the whole system is in 2D due to pendulum simplification
+The masses of the rods $L_1$ and $L_2$ are omitted and the rods assumed to be massless, masses $m_1$ and $m_2$ are treated as the point masses, the whole system is in 2D due to pendulum simplification
 
 ### Physical model
 
-System consists of two connected pendulums, moving in a two-dimensional plane
+System consists of two connected pendulums, moving in a two-dimensional plane. The motion equations provide only the instantaneous derivatives of the state vector. The actual time evolution is obtained by the RK4 integrator, which repeatedly applies these derivatives to update the angular positions and velocities. The motion equations are obtained from the system's Lagrangian
 
 ### Numerical algorithm
 
@@ -38,3 +38,24 @@ The choice of the used numerical algorith bases on the most efficient and accura
 - animation adaptivity
 - accuracy under conditions of energy loss and motion depression
 - convenience under one-step computation
+
+The equations of motion return only the derivatives of the current state:
+
+$$
+f(y) =
+\begin{bmatrix}
+\omega_1 \\
+\alpha_1 \\
+\omega_2 \\
+\alpha_2
+\end{bmatrix}
+$$
+
+These derivatives describe how the system is changing at a single moment in time.  
+The RK4 method uses several derivative evaluations inside one time step to approximate the next state:
+
+$$
+y(t + \Delta t)
+$$
+
+Thus, the derivative function describes the local dynamics, while the RK4 method constructs the time evolution of the pendulum.
