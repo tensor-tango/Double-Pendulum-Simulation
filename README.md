@@ -1,7 +1,7 @@
 # Double Pendulum Simulation
 
 Real-time simulation of a chaotic double pendulum system, written in MATLAB and Python.
-More detailed scientific- and engineering-based information of the system, numerical algorithm, motion equations and total summary can be found in dedicated file.
+More detailed scientific- and engineering-based information of the system, numerical algorithm, motion equations and total summary can be found in <report.pdf>.
 
 ## Demonstration
 
