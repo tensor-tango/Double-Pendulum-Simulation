@@ -1,12 +1,12 @@
 Double Pendulum Simulation
 
-Real-time simulation of a chaotic double pendulum system.
+Real-time simulation of a chaotic double pendulum system, written in MATLAB and Python.
 
-![Simulation](animation.gif)
+![Pyhon-Simulation](animation.gif)
 
 Main features:
 - RK4 numerical integrator
-- Live simulation
+- Live-time simulation
 - Energy analysis
 - Phase portrait 
-- Chaotic trajectory tracking
+- tracking of chaotic trajectory of the second mass 
