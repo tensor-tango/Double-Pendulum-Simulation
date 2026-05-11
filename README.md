@@ -17,5 +17,5 @@ Main features:
 - Phase portrait 
 - Tracking of chaotic trajectory of the second mass 
 
-!Importatnt notice!
+! Importatnt notice !
 The masses of both of the lengths are omitted and the whole system is in 2D due to pendulum simplification
