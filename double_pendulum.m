@@ -15,7 +15,7 @@ m2 = 1;
 L1 = 1;
 L2 = 1;
 
-%viscosity
+%friction in joints
 gamma1 = 0.02;
 gamma2 = 0.08;
 
