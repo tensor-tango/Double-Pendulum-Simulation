@@ -54,8 +54,8 @@ Thus, the derivative function describes the local dynamics, while the RK4 method
 The choice of the used numerical algorith bases on the most efficient and accurate algorithm exactly for this problem. Main factors were:
 - Accuracy under conditions of non-linearity and chaos
 - Exprected computational needs
-- animation adaptivity
-- accuracy under conditions of energy loss and motion depression
-- convenience under one-step computation
+- Animation adaptivity
+- Accuracy under conditions of energy loss and motion depression
+- Convenience under one-step computation
 
 It is important to notice, that double pendulum is a nonlinear and chaotic system, so small numerical errors can grow quickly and noticeably affect the simulated motion, thats why the exactly fourth-order Runge–Kutta method was chosen due to a good balance between accuracy, numerical stability and computational cost.
